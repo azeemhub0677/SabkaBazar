@@ -1,0 +1,28 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+.offer-card{
+    margin: 2.5rem ;
+    /* margin-bottom: -1rem; */
+    box-shadow: 0 6px 2px -2px  rgba(134, 133, 133, 0.158); 
+}
+.offer-card img{
+    height: 100%;
+    width: 80%;
+}
+.slick-dots{
+    margin-bottom: 1rem;
+}
+.slick-arrow{
+   padding: 19px;
+}
+
+.slick-arrow.slick-next:before{
+    color: rgb(73, 73, 73);
+    font-size: 2rem;
+}
+
+.slick-arrow.slick-prev:before{
+    color: rgb(73, 73, 73);
+    font-size: 2rem;
+    margin-left: -1.8rem;
+}

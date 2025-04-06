@@ -1,0 +1,7 @@
+.Sidebar-Products-Container{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin: auto;
+    margin-top: 1rem;
+
+}

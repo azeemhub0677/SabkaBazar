@@ -1,0 +1,89 @@
+/* Category Component CSS */
+
+.category-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.category-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-image-container {
+  width: 28%;
+}
+
+.category-info {
+  width: 45%;
+  text-align: left;
+}
+
+.category-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.category-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.category-order {
+  width: 150px;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #e74c3c;
+  color: white;
+  /* font-weight: bold;   */
+}
+
+.left {
+  order: 1; /* Image is on the left for even index */
+}
+
+.right {
+  order: 2; /* Image is on the right for odd index */
+}
+
+.category-card.even {
+  flex-direction: row-reverse; /* Reverse layout for even index items */
+}
+
+.category-card.odd {
+  flex-direction: row; /* Normal layout for odd index items */
+}

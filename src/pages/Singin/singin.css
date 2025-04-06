@@ -1,0 +1,130 @@
+
+
+
+
+/* Container for Login */
+.login-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* max-width: 1000px; */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Left Side (Heading & Description) */
+.heading {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20%;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.heading p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+/* Right Side (Login Inputs) */
+.login-box {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+input:focus {
+  border-color: #b63627;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+button {
+  padding: 14px;
+  background-color: #b63627;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8d2418;
+}
+
+/* Footer Section */
+.footer-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #e2e3e6;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .login-box {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
